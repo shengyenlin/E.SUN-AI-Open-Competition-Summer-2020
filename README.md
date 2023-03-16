@@ -6,7 +6,7 @@ Money laundering refers to the act of disguising and concealing criminal proceed
 
 Generally speaking, when customers interact with financial institutions, the banks need to immediately verify the customers' identity and check if they are on the AML watchlist by using an automated system. If AI can assist in updating the AML watchlist on a regular basis and coupled with automated comparison, it can significantly reduce the manpower and time cost of AML operations for banks.
 
-In this competition, participants will be provided with public news data links and corresponding watchlists. Through NLP algorithms, participants need to determine whether the content of the news article contains AML-related key figures, and extract the list of key figures (the list may be plural or empty). 
+In this [competition](https://tbrain.trendmicro.com.tw/Competitions/Details/11), participants will be provided with public news data links and corresponding watchlists. Through NLP algorithms, participants need to determine whether the content of the news article contains AML-related key figures, and extract the list of key figures (the list may be plural or empty). 
 
 ## Detailed tasks
 1. The organizers will provide news links and a list of key people corresponding to each news article. Teams are required to implement a crawler program to retrieve the news content by themselves.
