@@ -4,18 +4,21 @@ import numpy as np
 from sklearn.externals import joblib 
 last_name = pd.read_csv('last_name_CH.csv')
 
+def name_last_test(x):
+    res = x in list(last_name['name'])
+    return res
+
+def name_len(x):
+    return len(x)
+
 def model2(input):
-    def name_len(x):
-        return len(x)
     model = joblib.load('RFmodel2')
     feature = joblib.load('feature')
   # 取input的人名以及人名的位置
     name_id = input[input['word_pos']=='PERSON']
   # 只留百家姓
     name_id['name_last'] = name_id['word'].str.slice(start = 0, stop= 1)
-    def name_last_test(x):
-        res = x in list(last_name['name'])
-        return res
+
     name_id = name_id[list(map(name_last_test,name_id['name_last']))]
   # 處理記者
     first_word = list(input['word'][:15])

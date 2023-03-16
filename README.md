@@ -19,6 +19,16 @@ Placed 29th (7%) out of 409 teams.
 
 ## Methodologies
 
+1. Retrieve the names of people and their positions from the input.
+2. Keep only the hundred most common surnames.
+3. Handle vocabulary related to journalists.
+4. Only guess people's names that are three characters long. (Normally, Taiwanese people's name are three characters long)
+5. Identify the position of the keyword related to criminal topic. (Manually added by us)
+6. Calculate the distance between the person's name and their position.
+7. Use the distance to calculate other features.
+8. Input features into pre-trained random forest model.
+9. Output the results to a dataframe.
+
 ## Evaluation metrics
 
 ![metric equation](metric_equation.png "metric equation")
@@ -29,4 +39,4 @@ Placed 29th (7%) out of 409 teams.
 
 ## Useful links
 
-- [Google Drive]()
+- [Google Drive](https://drive.google.com/drive/folders/1Wjm3t6Yf2cCZveAa7QBhGy0t9xk-Hk3l?usp=share_link)
