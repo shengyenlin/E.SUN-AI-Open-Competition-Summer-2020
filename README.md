@@ -21,6 +21,11 @@ Placed 29th (7%) out of 409 teams.
 
 ## Evaluation metrics
 
+![metric equation](metric_equation.png "metric equation")
+
+**Example**
+
+![metric example](metric_example.png "metric example")
 
 ## Useful links
 
